@@ -7,6 +7,8 @@ Write an API that retrieves all countries.
 Write an API that retrieves a country by its id.
 
 
+## Project structure
+
 Controllers-> layer that contains controllers
 
 Domain-> layer that contains request,response,dtos
