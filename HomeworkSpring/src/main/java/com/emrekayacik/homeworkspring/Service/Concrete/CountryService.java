@@ -47,8 +47,8 @@ public class CountryService implements com.emrekayacik.homeworkspring.Service.Ab
     }
 
     @Override
-    public CountryUpdatePresidentResponse changePresident(CountryUpdatePresidentRequest request) {
-        Country country  = countryRepository.findById(request.id()).orElse(null);
+    public CountryUpdatePresidentResponse changePresident(CountryUpdatePresidentRequest request, Long id) {
+        Country country  = countryRepository.findById(id).orElse(null);
         if (country==null){
             return null;
         }

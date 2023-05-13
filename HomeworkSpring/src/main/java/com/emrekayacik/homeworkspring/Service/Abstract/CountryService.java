@@ -13,5 +13,5 @@ public interface CountryService {
     List<CountryDto> get();
     CountryDto getById(Long id);
     CountrySaveResponse save(CountryDto countryDto);
-    CountryUpdatePresidentResponse changePresident(CountryUpdatePresidentRequest request);
+    CountryUpdatePresidentResponse changePresident(CountryUpdatePresidentRequest request, Long id);
 }

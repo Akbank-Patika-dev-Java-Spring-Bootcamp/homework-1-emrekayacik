@@ -34,8 +34,8 @@ public class CountryController {
     public ResponseEntity<CountrySaveResponse> save(@RequestBody CountryDto countryDto){
         return ResponseEntity.ok(countryService.save(countryDto));
     }
-    @PatchMapping("/")
-    public ResponseEntity<CountryUpdatePresidentResponse> updatePresident(@RequestBody CountryUpdatePresidentRequest request){
-        return ResponseEntity.ok(countryService.changePresident(request));
+    @PatchMapping("/{id}/change-president")
+    public ResponseEntity<CountryUpdatePresidentResponse> updatePresident(@RequestBody CountryUpdatePresidentRequest request, @PathVariable Long id){
+        return ResponseEntity.ok(countryService.changePresident(request,id));
     }
 }

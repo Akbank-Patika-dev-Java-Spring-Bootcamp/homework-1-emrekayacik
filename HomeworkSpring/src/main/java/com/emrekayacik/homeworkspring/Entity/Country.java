@@ -12,10 +12,11 @@ import lombok.*;
 @Table
 public class Country {
     @Id
-    @GeneratedValue
+    @GeneratedValue(generator = "GenCountry",strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "GenCountry", allocationSize = 1,sequenceName = "SQ_COUNTRY")
     private Long id;
-    @Column
+    @Column(name = "NAME",length = 100,nullable = false)
     private String name;
-    @Column
+    @Column(name = "PRESIDENT",length = 80)
     private String president;
 }

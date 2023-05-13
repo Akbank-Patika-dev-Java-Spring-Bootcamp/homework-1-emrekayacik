@@ -2,4 +2,4 @@ package com.emrekayacik.homeworkspring.Domain;
 
 
 
-public record CountryUpdatePresidentRequest(Long id, String president){ }
+public record CountryUpdatePresidentRequest(String president){ }
