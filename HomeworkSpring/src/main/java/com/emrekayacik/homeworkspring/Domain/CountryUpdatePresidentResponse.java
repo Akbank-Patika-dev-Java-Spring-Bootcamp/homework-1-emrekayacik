@@ -1,4 +1,4 @@
-package com.emrekayacik.homeworkspring.Domain.Country;
+package com.emrekayacik.homeworkspring.Domain;
 
 
 public record CountryUpdatePresidentResponse(Long id,String president) { }

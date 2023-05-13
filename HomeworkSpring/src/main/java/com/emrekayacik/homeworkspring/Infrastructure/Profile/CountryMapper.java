@@ -1,7 +1,7 @@
 package com.emrekayacik.homeworkspring.Infrastructure.Profile;
 
-import com.emrekayacik.homeworkspring.Domain.Country.CountryDto;
-import com.emrekayacik.homeworkspring.Entity.Country.Country;
+import com.emrekayacik.homeworkspring.Domain.CountryDto;
+import com.emrekayacik.homeworkspring.Entity.Country;
 import org.mapstruct.Mapper;
 
 @Mapper

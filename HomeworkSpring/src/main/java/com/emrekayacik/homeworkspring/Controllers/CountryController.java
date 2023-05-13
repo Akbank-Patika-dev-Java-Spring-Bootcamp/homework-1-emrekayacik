@@ -1,9 +1,9 @@
-package com.emrekayacik.homeworkspring.Controllers.Country;
+package com.emrekayacik.homeworkspring.Controllers;
 
-import com.emrekayacik.homeworkspring.Domain.Country.CountryDto;
-import com.emrekayacik.homeworkspring.Domain.Country.CountrySaveResponse;
-import com.emrekayacik.homeworkspring.Domain.Country.CountryUpdatePresidentRequest;
-import com.emrekayacik.homeworkspring.Domain.Country.CountryUpdatePresidentResponse;
+import com.emrekayacik.homeworkspring.Domain.CountryDto;
+import com.emrekayacik.homeworkspring.Domain.CountrySaveResponse;
+import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentRequest;
+import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentResponse;
 import com.emrekayacik.homeworkspring.Service.Abstract.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

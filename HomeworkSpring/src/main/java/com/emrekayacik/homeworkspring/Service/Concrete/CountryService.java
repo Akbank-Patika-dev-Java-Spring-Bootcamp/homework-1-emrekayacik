@@ -1,9 +1,11 @@
 package com.emrekayacik.homeworkspring.Service.Concrete;
-
-import com.emrekayacik.homeworkspring.Domain.Country.*;
-import com.emrekayacik.homeworkspring.Entity.Country.Country;
+import com.emrekayacik.homeworkspring.Domain.CountryDto;
+import com.emrekayacik.homeworkspring.Domain.CountrySaveResponse;
+import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentRequest;
+import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentResponse;
+import com.emrekayacik.homeworkspring.Entity.Country;
 import com.emrekayacik.homeworkspring.Infrastructure.Profile.CountryMapper;
-import com.emrekayacik.homeworkspring.Repository.Abstract.CountryRepository;
+import com.emrekayacik.homeworkspring.Repository.CountryRepository;
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

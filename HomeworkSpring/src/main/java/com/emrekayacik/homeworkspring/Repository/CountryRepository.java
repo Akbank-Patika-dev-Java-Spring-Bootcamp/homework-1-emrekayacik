@@ -1,6 +1,6 @@
-package com.emrekayacik.homeworkspring.Repository.Abstract;
+package com.emrekayacik.homeworkspring.Repository;
 
-import com.emrekayacik.homeworkspring.Entity.Country.Country;
+import com.emrekayacik.homeworkspring.Entity.Country;
 import org.springframework.data.repository.CrudRepository;
 
 

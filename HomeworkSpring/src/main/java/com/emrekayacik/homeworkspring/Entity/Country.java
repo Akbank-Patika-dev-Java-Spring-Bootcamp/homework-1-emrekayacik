@@ -1,4 +1,4 @@
-package com.emrekayacik.homeworkspring.Entity.Country;
+package com.emrekayacik.homeworkspring.Entity;
 
 import jakarta.persistence.*;
 import lombok.*;
