@@ -1,8 +1,5 @@
 package com.emrekayacik.homeworkspring.Service.Concrete;
-import com.emrekayacik.homeworkspring.Domain.CountryDto;
-import com.emrekayacik.homeworkspring.Domain.CountrySaveResponse;
-import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentRequest;
-import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentResponse;
+import com.emrekayacik.homeworkspring.Domain.*;
 import com.emrekayacik.homeworkspring.Entity.Country;
 import com.emrekayacik.homeworkspring.Infrastructure.Profile.CountryMapper;
 import com.emrekayacik.homeworkspring.Repository.CountryRepository;
@@ -44,6 +41,11 @@ public class CountryService implements com.emrekayacik.homeworkspring.Service.Ab
                 countryRepository.save(countryMapper.countryDtoToCountry(countryDto))
                         .getId()
         );
+    }
+    @Override
+    public CountryDeleteResponse delete(Long id) {
+        countryRepository.deleteById(id);
+        return new CountryDeleteResponse("Success",id);
     }
 
     @Override

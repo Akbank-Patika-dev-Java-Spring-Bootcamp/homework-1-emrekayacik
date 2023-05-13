@@ -1,9 +1,6 @@
 package com.emrekayacik.homeworkspring.Service.Abstract;
 
-import com.emrekayacik.homeworkspring.Domain.CountryDto;
-import com.emrekayacik.homeworkspring.Domain.CountrySaveResponse;
-import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentRequest;
-import com.emrekayacik.homeworkspring.Domain.CountryUpdatePresidentResponse;
+import com.emrekayacik.homeworkspring.Domain.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,6 +33,8 @@ public interface CountryService {
      * @return a CountrySaveResponse object indicating the result of the save operation
      */
     CountrySaveResponse save(CountryDto countryDto);
+
+    CountryDeleteResponse delete(Long id);
 
     /**
      * Updates the president of a country.
